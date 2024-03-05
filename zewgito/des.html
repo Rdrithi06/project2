@@ -1,0 +1,334 @@
+<html>
+
+    <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>css</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+
+            #box{
+
+                width:100%;
+
+                height:200px;
+
+                background-color:blue;
+
+                display:flex;
+
+                //justify-content: center;
+
+                //justify-content:flex-end;
+
+                //justify-content:flex-start;
+
+                //justify-content:space-around;
+
+                justify-content:space-between;
+
+                align-items:center;
+
+            }
+
+            .ibox{
+
+ 
+
+                width:300px;
+
+                height:200px;
+
+                background-color:pink;
+
+                margin:2px;
+
+                }
+
+.figure-caption text-end{
+
+               width:20px;
+
+height:20px;
+
+font: bold;
+
+font-align-content:center;
+
+ 
+
+ 
+
+ 
+
+ 
+
+}
+
+img{
+
+width:300px;
+
+                height:200px;
+
+object-fit:contain;
+
+ 
+
+}
+
+
+
+ 
+
+
+
+
+ 
+
+ 
+ 
+
+
+
+button {
+
+  border-radius: 4px;
+
+  background-color: #f4511e;
+
+  border: none;
+
+  color: #FFFFFF;
+
+  text-align: center;
+
+  font-size: 28px;
+
+  padding: 20px;
+
+  width: 200px;
+
+  transition: all 0.5s;
+
+  cursor: pointer;
+
+  margin:auto;
+
+  margin-top:430px;
+
+  margin-left:-880px;
+
+}
+
+ 
+
+.button span {
+
+  cursor: pointer;
+
+  display: inline-block;
+
+  position: relative;
+
+  transition: 0.5s;
+
+}
+
+ 
+
+.button span:after {
+
+  content: '\00bb';
+
+  position: absolute;
+
+  opacity: 0;
+
+  top: 0;
+
+  right: -20px;
+
+  transition: 0.5s;
+
+}
+
+ 
+
+.button:hover span {
+
+  padding-right: 25px;
+
+}
+
+ 
+
+.button:hover span:after {
+
+  opacity: 1;
+
+  right: 0;
+
+}
+
+.button-group{
+
+display: inline-flex;
+
+background-color:white;
+
+}
+.checked {
+            color: orange;
+        }
+
+ 
+
+       </style>
+
+    </head>
+
+    <body bgcolor="white">
+
+
+  
+        <div id="box">  
+
+            <div class="ibox">  <img src="f25.jpg" class="figure-img img-fluid rounded" alt="...">
+
+<figure class="figure">
+
+<figcaption class="figure-caption text-end">Peri Peri Fries</figcaption>
+<span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star"></span>
+                <div class="price-box">
+                    <p class="price">&#8377;134</p>
+					</div>
+
+
+<form>
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" max="100">
+</form>
+
+</figure>
+
+</div>
+
+
+<div id="box">  
+
+            <div class="ibox">  <img src="f26.png" class="figure-img img-fluid rounded" alt="...">
+
+<figure class="figure">
+
+<figcaption class="figure-caption text-end">veggie Strips</figcaption>
+<span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <div class="price-box">
+                        <p class="price">&#8377;70</p>
+                    </div>
+
+<form>
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" max="100">
+</form>
+  </figure>
+
+  </div>
+
+  <div id="box">  
+
+            <div class="ibox">  <img src="f27.jpg" class="figure-img img-fluid rounded" alt="...">
+
+<figure class="figure">
+
+<figcaption class="figure-caption text-end">Choco Lava Cup</figcaption>
+<span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star"></span>
+                        <div class="price-box">
+                            <p class="price">&#8377;109</p>
+                        </div>
+
+<form>
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" max="100">
+</form>
+
+  </figure>
+
+  </div>
+
+  <div id="box">  
+
+            <div class="ibox">  <img src="f28.jpg" class="figure-img img-fluid rounded" alt="...">
+
+<figure class="figure">
+
+<figcaption class="figure-caption text-end">King Pepsi</figcaption>
+<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <div class="price-box">
+                                    <p class="price">&#8377;99</p>
+                                </div>
+
+<form>
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" max="100">
+</form>
+
+  </figure>
+
+  </div>
+
+  <div id="box">  
+
+            <div class="ibox">  <img src="f29.jpg" class="figure-img img-fluid rounded" alt="...">
+
+<figure class="figure">
+
+<figcaption class="figure-caption text-end">Chocolate Thick Shake</figcaption>
+<span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked "></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <div class="price-box">
+                                        <p class="price">&#8377;159</p>
+                                    </div>
+
+
+<form>
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" max="100">
+</form>
+
+  </figure>
+
+  </div>
+
+  <button class="button" method="post"  onclick="window.location.href='exit.html'"><span>Checkout! </span></button>
+
+  <br>
+
+  <!--div class="button-group">
+
+  <button class="button" type="button">Checkout</button-->
+
+    </body>
+
+</html>

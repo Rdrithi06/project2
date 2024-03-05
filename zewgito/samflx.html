@@ -1,0 +1,225 @@
+<html>
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>css</title>
+        <style>
+            #box{
+                width:100%;
+                height:200px;
+                background-color:blue;
+                display:flex;
+                //justify-content: center;
+                //justify-content:flex-end;
+                //justify-content:flex-start;
+                //justify-content:space-around;
+                justify-content:space-between;
+                align-items:center;
+            }
+            .ibox{
+			
+                width:300px;
+                height:200px;
+                background-color:pink;
+                margin:2px;
+                }
+				.figure-caption text-end{
+				                width:20px;
+								height:20px;
+								font: bold;
+								font-align-content:center;
+								
+
+								
+
+				}
+				img{
+				width:300px;
+                height:200px;
+				object-fit:contain;
+			
+				}
+				form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align:left;
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button-group{
+display: inline-flex;
+background-color:white;
+}
+
+       </style>
+    </head>
+    <body bgcolor="orange">
+	<script>
+	function increaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('number').value = value;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('number').value = value;
+}
+</script>
+        <div id="box">   
+            <div class="ibox">  <img src="f10.jpg" class="figure-img img-fluid rounded" alt="...">
+			<figure class="figure">
+			<figcaption class="figure-caption text-end">Minerva Special South Indian Thali</figcaption>
+			 <form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+  </form>
+</figure>
+</div>
+
+ <div id="box">   
+            <div class="ibox">  <img src="f11.jpg" class="figure-img img-fluid rounded" alt="...">
+			<figure class="figure">
+			<figcaption class="figure-caption text-end">Dosa: Paper-thin crepes</figcaption>
+			 <form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+  </form>
+  </figure>
+  </div>
+  <div id="box">   
+            <div class="ibox">  <img src="f12.jpg" class="figure-img img-fluid rounded" alt="...">
+			<figure class="figure">
+			<figcaption class="figure-caption text-end">Idli:Steamed Rice cakes</figcaption>
+			 <form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+  </form>
+  </figure>
+  </div>
+  <div id="box">   
+            <div class="ibox">  <img src="f13.jpg" class="figure-img img-fluid rounded" alt="...">
+			<figure class="figure">
+			<figcaption class="figure-caption text-end">vada:Savoury doughnuts</figcaption>
+			 <form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+  </form>
+  </figure>
+  </div>
+  <div id="box">   
+            <div class="ibox">  <img src="f14.jpg" class="figure-img img-fluid rounded" alt="...">
+			<figure class="figure">
+			<figcaption class="figure-caption text-end">Uttapams:Pizza-pancake hybrids</figcaption>
+			 <form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+  </form>
+  </figure>
+  </div>
+  <form action="exit.html" method="post">
+  <button class="button"><span>Checkout! </span></button>
+  <br>
+  <!--div class="button-group">
+  <button class="button" type="button">Checkout</button-->
+    </body>
+</html>
